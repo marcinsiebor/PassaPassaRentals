@@ -1,0 +1,61 @@
+<div class="container mt-3"> 
+  <div class="mt-5">
+    <div class="text-center mb-4">
+      <h2>Your Reservations</h2>
+    </div>
+    
+    <div class="col">
+      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1" >
+          <table class="table table-hover table-striped">
+              <thead>
+                  <tr class="table-info">
+                      <th scope="col">#</th>
+                      <th scope="col">Car</th>
+                      <th scope="col">From</th>
+                      <th scope="col">To</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let reservation of reservations; let i = index">
+                      <th scope="row">{{ i + 1 }}</th>
+                      <td>{{ reservation.brand }}</td>
+                      <td>{{ reservation.from_location }}</td>
+                      <td>{{ reservation.to_location }}</td>
+                  </tr>
+              </tbody>
+          </table>
+          <p *ngIf="reservations.length === 0">No reservations found.</p>
+      </div>
+    </div>
+
+
+    <h2>Add Reservation</h2>
+    <button class="btn btn-primary mb-3" (click)="toggleReservationForm()">Reservation Form</button>
+
+    <form  *ngIf="showReservationForm" (submit)="makeReservation()" #reservationForm="ngForm">
+      <fieldset>
+        <div class="mb-3">
+          <label for="brand" class="form-label">Car Brand</label>
+          <input type="text" class="form-control" id="brand" [(ngModel)]="reservationData.brand" name="brand" required>
+        </div>
+        
+  
+        <div class="mb-3">
+          <label for="from_location" class="form-label">From Location</label>
+          <input type="text" class="form-control" id="from_location" [(ngModel)]="reservationData.from_location" name="from_location" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="to_location" class="form-label">To Location</label>
+          <input type="text" class="form-control" id="to_location" [(ngModel)]="reservationData.to_location" name="to_location" required>
+        </div>
+  
+        <button type="submit" class="btn btn-primary">Make Reservation</button>
+      </fieldset>
+    </form>
+  
+  </div>  
+</div>
+
+
+

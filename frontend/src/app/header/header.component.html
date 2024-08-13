@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navs">
+    <div class="container-fluid">
+      <div class="navbar-brand d-flex align-items-center mx-auto">
+            <img src="assets/images/logo2.png" alt="" width="60" height="62" class="me-2"  [routerLink]="['/home']">
+            <a class="navbar-brand" [routerLink]="['/home']">Car Rental</a>
+      </div>       
+      <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active"  [routerLink]="['/my-available-cars']"  (click)="isMenuCollapsed = true" >Available Cars</a>
+          </li>
+          <li class="nav-item" *ngIf="isLoggedIn  || hasSignedUp ">
+            <a class="nav-link" [routerLink]="['/my-reservations']"  (click)="isMenuCollapsed = true" >My Reservation</a>
+          </li>
+          <li class="nav-item" *ngIf="isLoggedIn  || hasSignedUp ">
+            <a class="nav-link" [routerLink]="['/passa-ai']"  (click)="isMenuCollapsed = true" >Passa AI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/about-us']"  (click)="isMenuCollapsed = true" >About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contact']"  (click)="isMenuCollapsed = true" >Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="row">
+            <div class="col">             
+              <div ngbDropdown class="d-inline-block"  (click)="isMenuCollapsed = true">
+                <button type="button" class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle>
+                  <i class="bi bi-person-circle"></i>
+                </button>
+                <div ngbDropdownMenu style="margin-left: -100px;" aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem *ngIf="!isLoggedIn  && !hasSignedUp">
+                      <a class="nav-link" [routerLink]="['/login']" >Login</a></button>
+                    <button ngbDropdownItem *ngIf="isLoggedIn || hasSignedUp">
+                      <a class="nav-link" (click)="onLogoutClicked()">Logout</a>
+                    </button>
+                    <button ngbDropdownItem *ngIf="!isLoggedIn && !hasSignedUp">
+                      <a class="nav-link" [routerLink]="['/sign-up']" >Sign Up</a>
+                    </button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,30 @@
+<div class="login">
+  <form class="form-signin border p-3 rounded-3 " [formGroup]="loginForm" (ngSubmit)="loginSubmitted()">
+      <h1 class="h3 mb-3 font-weight-normal">Please Sign in</h1>
+      <input type="email" class="form-control" id="email" formControlName="email" placeholder="Email Address" />
+      <div *ngIf="Email.invalid && (Email.dirty || Email.touched)" class="error">
+          <div *ngIf="Email.errors?.['required']">Email is required.</div>
+          <div *ngIf="Email.errors?.['email']">Invalid email address.</div>
+      </div>
+
+      <input type="password" class="form-control" id="pwd" formControlName="pwd" placeholder="Password"/>
+      <div *ngIf="PWD.invalid && (PWD.dirty || PWD.touched)" class="error">
+          <div *ngIf="PWD.errors?.['required']">Password is required.</div>
+          <div *ngIf="PWD.errors?.['minlength']">
+            Password must be at least 6 characters long.
+          </div>
+          <div *ngIf="PWD.errors?.['maxlength']">
+            Password cannot be more than 15 characters long.
+          </div>
+      </div>
+
+      <button
+        type="submit"
+        mat-raised-button
+        [disabled]="loginForm.invalid"
+        class="btn btn-primary w-100 p-button-success"
+      >
+        Log in
+      </button>
+  </form>
+</div>

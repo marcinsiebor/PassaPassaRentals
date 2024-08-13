@@ -1,0 +1,25 @@
+.custom-width {
+    width: 900px;
+}
+
+.ai-content {
+    word-wrap: break-word; 
+    max-width: 100%;       
+    overflow-x: auto;      
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-x: auto; 
+  }
+  
+  .container {
+    min-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+}

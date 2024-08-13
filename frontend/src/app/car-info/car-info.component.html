@@ -1,0 +1,13 @@
+<div class="col mb-4 cd">
+    <div class="card round" style="width: 25rem;">
+        <!-- <img [src]="car.pictureUrl" [alt]="car.brand" class="car-img-top rounded-circle"> -->
+        <img [src]="car.pictureUrl" [alt]="car.brand" class="car-img-top img-thumbnail">
+        
+        <div class="card-body">
+            <h5 class="card-title">{{car.brand}}</h5>
+        </div>
+        <div class="card-body">
+            <button type="button" class="btn btn-outline-secondary card-link" [routerLink]="['/my-reservations']">Rent</button>
+        </div>
+    </div>
+</div>

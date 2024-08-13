@@ -1,0 +1,19 @@
+li {
+    display: inline;
+    margin-right: 10px;
+   }
+   
+.navs
+{
+    background-color: #7BD3EA;
+}
+
+.nav-item a:hover {
+    color: #FAEED1; 
+}
+
+
+
+#form1{
+    background-color: #B6BBC4;
+}

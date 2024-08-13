@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+h1 {
+    color: white;
+}
+p {
+    color: white;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+.logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}

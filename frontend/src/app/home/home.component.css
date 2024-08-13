@@ -1,0 +1,9 @@
+.container {
+  position: fixed;
+  min-width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: background-image 5s ease-in-out; 
+}

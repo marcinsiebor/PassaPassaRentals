@@ -1,0 +1,19 @@
+<form class="form-inline waves-light d-flex justify-content-center align-items-center" mdbWavesEffect>
+    <div class="md-form mt-0">
+        <input 
+            class="form-control mr-sm-2 narrower-search-input"
+            id="search-input"
+            type="search"
+            id="form1"
+            placeholder="Search"
+            (input)="filterCars($event)">
+    </div>
+</form>
+
+
+
+<div class="cars mt-4">
+    <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-1">
+        <app-car-info *ngFor="let car of filteredCars" [car]="car"></app-car-info>
+    </div>
+</div>

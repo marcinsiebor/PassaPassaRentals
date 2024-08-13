@@ -1,0 +1,16 @@
+.cars{
+    margin: 15px;
+    margin-top: 25px;
+}
+
+.narrower-search-input {
+    width: 650px; 
+    text-align: center; 
+    background-color: #FFD1E3;
+}
+
+
+.form-inline {
+    margin-top: 10px;
+    justify-content: center;
+}
