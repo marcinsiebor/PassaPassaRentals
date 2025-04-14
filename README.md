@@ -17,9 +17,6 @@ Developed as part of a Programming Languages Project at the University of Inform
 ## 🌍 Overview
 Passa Passa Rentals is a next-gen car rental platform that provides a seamless user experience for customers and administrators alike. It allows users to browse cars, register, log in, and make reservations, while admins can monitor reservations and users.
 
-📅 Project Timeline: December 2023 – January 2024  
-🎯 Goal: To automate car rentals and enhance user experience through a responsive SPA front end and a secure, RESTful backend&#8203;:contentReference[oaicite:0]{index=0}.
-
 ---
 
 ## 💻 Tech Stack
@@ -36,14 +33,7 @@ Passa Passa Rentals is a next-gen car rental platform that provides a seamless u
 - Python 3
 - Flask Web Framework
 - Flask-CORS
-- SQLite Database
-- RESTful API with endpoints:
-  - `/register` (POST)
-  - `/login` (POST)
-  - `/logout` (POST)
-  - `/make-reservation/<user_id>` (POST)
-  - `/user-reservations/<user_id>` (GET)
-  - `/openai-api-key` (GET)&#8203;:contentReference[oaicite:1]{index=1}
+- SQLite3
 
 ---
 
@@ -56,10 +46,6 @@ Passa Passa Rentals is a next-gen car rental platform that provides a seamless u
 - 💬 **Passa AI** – Get car suggestions via OpenAI API.
 - 📧 **Contact Form** – Send inquiries using a styled contact form.
 - ℹ️ **About Us** – Learn about the company’s mission and services.
-
-### Admin Features (future scope)
-- View all users and reservations
-- Monitor activity logs
 
 ---
 
@@ -77,7 +63,6 @@ Passa Passa Rentals is a next-gen car rental platform that provides a seamless u
 ### Flask Back End
 - Uses SQLite to manage two tables: `users`, `reservations`
 - Passwords stored securely with SHA-256 hashing
-- Uses Flask sessions for login state&#8203;:contentReference[oaicite:2]{index=2}
 
 ## 🚀 Installation
 
