@@ -108,6 +108,6 @@ ng serve
 
 | Name                   | Role       |
 |------------------------|------------|
+| Marcin Siębor          | Developer  |
 | Ahmed Alkali Mohammed  | Developer  |
 | Muhammed Cham          | Developer  |
-| Marcin Siębor          | Developer  |
