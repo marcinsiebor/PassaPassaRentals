@@ -125,4 +125,4 @@ ng serve
 |------------------------|------------|
 | Ahmed Alkali Mohammed  | Developer  |
 | Muhammed Cham          | Developer  |
-| Marcin Siebor          | Developer  |
+| Marcin Siębor          | Developer  |
