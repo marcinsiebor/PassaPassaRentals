@@ -4,13 +4,13 @@
 Developed as part of a Programming Languages Project at the University of Information Technology and Management, Rzeszów, Poland.
 
 ## 📌 Table of Contents
-- [Overview](#overview)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [System Architecture](#system-architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributors](#contributors)
+- [Overview](##overview)
+- [Tech Stack](##tech-stack)
+- [Features](##features)
+- [System Architecture](##system-architecture)
+- [Installation](##installation)
+- [Usage](##usage)
+- [Contributors](##contributors)
 
 ---
 
