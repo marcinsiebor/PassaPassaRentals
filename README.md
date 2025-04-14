@@ -1,6 +1,6 @@
 # Passa Passa Rentals: Next-Gen Car Rental Platform 🚗
 
-A modern, full-stack car rental web application built with Angular, Flask, and SQLite. 
+A modern, full-stack car rental web application built with **Angular**, **Flask**, and **SQLite**. 
 
 Developed as part of a Programming Languages Project at the University of Information Technology and Management, Rzeszów, Poland.
 
